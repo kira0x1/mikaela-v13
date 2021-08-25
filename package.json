@@ -1,0 +1,29 @@
+{
+  "name": "discordjs-test",
+  "version": "1.0.0",
+  "main": "out/index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "ts-node-dev --respawn --pretty --transpile-only .",
+    "register": "yarn compile && node out/deploy-commands.js",
+    "compile": "tsc"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/opus": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordjs/voice": "^0.6.0",
+    "chalk": "^4.1.2",
+    "discord-api-types": "^0.22.0",
+    "discord.js": "^13.1.0",
+    "ffmpeg-static": "^4.4.0",
+    "libsodium-wrappers": "^0.7.9",
+    "youtube-dl-exec": "^1.2.4",
+    "ytdl-core": "^4.9.1"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  }
+}
